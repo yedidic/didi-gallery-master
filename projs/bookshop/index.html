@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="lib/bs4/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="renderBooks()">
+    <div id="read-modal" class="modal">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="float-right">&times;</span>
+            </button>
+            <img src="" class="book-img mx-auto py-3" />
+            <h3 class="read-title">Title:
+                <span></span>
+            </h3>
+            <h5 class="read-price">Price:
+                <span></span>
+            </h5>
+            <div class="rate-container">
+                <button class="btn thumb thumb-up">👍</button>
+                <span class="rate mx-3 mb-0">5</span>
+                <button class="btn thumb thumb-down">👎</button>
+            </div>
+        </div>
+    </div>
+    <h3 class="shop-title mt-2">Didi's Book Shop</h1>
+
+        <table class="table-bordered mx-auto">
+            <thead>
+                <tr class="table-dark">
+                    <td>Id</td>
+                    <td>Title</td>
+                    <td>Price</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody class="books-table" />
+        </table>
+        <div class="add-book-container my-3">
+            <button class="btn btn-success add-book-btn" onclick="readAndAddNewBook()">Add a new Book</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="js\utils-service.js"></script>
+        <script src="js\book-service.js"></script>
+        <script src="js\main.js"></script>
+</body>
+
+</html>

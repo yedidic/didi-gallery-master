@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <h1></h1>
+    <form id="radio-form" class="radio-btn">
+        <input type="radio" name="level" checked id="0" value="0"> Easy
+        <input type="radio" name="level" id="1" value="1"> Medium
+        <input type="radio" name="level" id="2" value="2"> Expert
+    </form>
+    <br/>
+    <button class="reset-btn" onclick="initGame()">New Game</button>
+    
+    <div class="timeline-container">
+        <table>
+            <tr>
+                <td>
+                    <img src="img/0.png" class="mines-left0">
+                    <img src="img/0.png" class="mines-left1">
+                    <img src="img/0.png" class="mines-left2">
+                </td>
+                <td>
+                    <h2 class="emoji">😇</h2>
+                </td>
+                <td>
+                    <img src="img/0.png" class="time0">
+                    <img src="img/0.png" class="time1">
+                    <img src="img/0.png" class="time2">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table class="center">
+        <tbody class="gameBoard"></tbody>
+    </table>
+    <ul class="highscore">
+            <h3>Highscore</h3>
+        <li class="easy"></li>
+        <li class="med"></li>
+        <li class="exp"></li>
+    </ul>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

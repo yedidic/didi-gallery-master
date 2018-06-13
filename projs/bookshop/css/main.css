@@ -1,0 +1,59 @@
+body{
+    background: cornsilk;
+}
+
+.shop-title {
+    text-align: center;
+    color: darkblue;
+}
+
+.table-dark td{
+    background-color: rgb(0, 0, 0);
+    padding: 0.3em;
+    text-align: center;
+}
+.books-table tr td{
+    padding: 1em;
+}
+
+.table-bordered th, .table-bordered td{
+    border: 2.5px solid #dee2e6;
+}
+.add-book-container {
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.modal {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    padding: 1em;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+}
+
+  .book-img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+}
+
+  .modal-backdrop{
+      background: none;
+}
+
+.rate-container span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.thumb {
+    margin-bottom: 10px;
+}

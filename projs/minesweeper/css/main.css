@@ -1,0 +1,83 @@
+.square {
+    border-color: black;
+    border: 10px;
+    background-color: rgb(206, 206, 206);
+    font-weight: bold;
+    color: red;    
+}
+.square.open0 {
+    background-color: rgb(252, 252, 252)
+}
+.square.open1 {
+    color: blue;
+    background-color: rgb(252, 252, 252)    
+}
+.square.open2 {
+    color: green;
+    background-color: rgb(252, 252, 252)    
+}
+.square.open3 {
+    color: red;
+    background-color: rgb(252, 252, 252)    
+}
+.square.open4 {
+    color: darkblue;
+    background-color: rgb(252, 252, 252)    
+}
+.square.open5 {
+    color: darkred;
+    background-color: rgb(252, 252, 252)    
+}
+.square.open6 {
+    color: rgb(34, 77, 90);
+    background-color: rgb(252, 252, 252)
+    
+}
+.square.open7 {
+    color: black;
+    background-color: rgb(252, 252, 252)
+    
+}
+.square.open8 {
+    color: lightgrey;
+    background-color: rgb(252, 252, 252)
+    
+}
+.square.open-1 {
+    color: black;
+    background-color: red;
+}
+
+.gameBoard td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.center {
+    pointer-events: auto; 
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: lightskyblue;
+    text-align: center;   
+}
+.radio-btn {
+    color:brown;
+    font-weight: bold;
+}
+
+.timeline-container table {
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 2px;
+}
+li {
+    text-align: center;
+}
+ul {
+-webkit-padding-start: 0px;
+}

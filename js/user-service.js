@@ -25,7 +25,7 @@ var gProjects = [
         id: 'bookshop',
         name: 'Book Shop',
         title: 'Nice website to purchase books',
-        desc: 'very nice and responsive place',
+        desc: 'Very nice and responsive place',
         url: 'projs/minesweeper/index.html',
         publishedAt: 1528724423,
         labels: ['Bootstrap', 'Mouse events'],

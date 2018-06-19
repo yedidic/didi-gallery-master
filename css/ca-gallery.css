@@ -6,7 +6,7 @@ p {
     line-height: 1.75;
 }
 a {
-    color: #fed136;
+    color: #144070;
 }
 a.active,
 a:active,
@@ -40,11 +40,11 @@ section h3.section-subheading {
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     section {
         padding: 150px 0;
     }
-}
+} */
 ::-moz-selection {
     background: #fed136;
     text-shadow: none;
@@ -69,7 +69,8 @@ body {
     left: 3%;
     height: 50px;
     width: 50px;
-    background: #e2cb36;
+    background: #caf2ff;
+    color: #144070;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -85,7 +86,7 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
+    background: #caf2ff;
     width: 30vw;
     left: -30vw;
     transition: all 0.3s ease;
@@ -107,7 +108,7 @@ body {
     left: 0;
 }
 #mainNav {
-    background-color: #222222;
+    background-color: #144070;
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
@@ -115,13 +116,16 @@ body {
     padding: 13px;
     text-transform: uppercase;
     color: white;
+    font-size: 1.3rem;
     border: 0;
-    background-color: #fed136;
+    background-color: #caf2ff;
+    color: darkblue;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: whitesmoke;
+    font-size: 1.7rem;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
@@ -141,7 +145,7 @@ body {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: #baf0eb;
 }
 @media (min-width: 992px) {
     #mainNav {
@@ -165,7 +169,7 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #222222;
+        background-color: #144070;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -247,7 +251,7 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(254, 209, 54, 0.9);
+    background: rgb(78, 148, 217);
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
@@ -607,7 +611,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: #4e94d9;
 }
 .flex-align-center {
     display: flex;
@@ -615,13 +619,13 @@ ul.social-buttons li a:hover {
     align-items: center;
 }
 .text-primary {
-    color: #fed136 !important;
+    color: #336cab !important;
 }
 .btn-primary {
     font-weight: 700;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #144070;
+    background-color: #144070;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -632,9 +636,9 @@ ul.social-buttons li a:hover {
     background-color: #fec503;
 }
 .btn-primary:hover {
-    color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    color: darkblue;
+    border-color: darkblue;
+    background-color: #caf2ff;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -682,9 +686,9 @@ fieldset[disabled] .btn-primary:hover {
     font-weight: 700;
     padding: 20px 40px;
     border-radius: 3px;
-    color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    color: #0e0e3b;
+    border-color: #caf2ff;
+    background-color: #caf2ff;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -696,8 +700,8 @@ fieldset[disabled] .btn-primary:hover {
 }
 .btn-xl:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #336cab;
+    background-color: #336cab;
 }
 .btn-xl.active,
 .btn-xl:active,
@@ -742,10 +746,24 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 .form-group label{
-    color:white;
+    color:black;
     font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contact-me {
+    padding: 10px;
 }
 
 .contact-me button{
     font-size: 1.5em;
+    cursor: pointer;
 }
+/* 
+@media (max-width: 520px){
+    .offcanvas-aside{
+        width: 100vw;
+    }
+} */
+
+/* TODO: Take care of the media query mobile contact-me */
